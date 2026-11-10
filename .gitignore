@@ -1,0 +1,29 @@
+# --- Secrets and key material (never commit) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.seed
+secrets/
+# Local Stellar CLI configuration (may contain identities/keys)
+.stellar/
+.soroban/
+
+# --- Rust / Soroban ---
+target/
+**/*.rs.bk
+
+# --- Go ---
+/bin/
+*.exe
+*.test
+*.out
+coverage.*
+go.work.sum
+
+# --- Editors / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
